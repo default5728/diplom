@@ -81,7 +81,14 @@ html {
   font-size: 17px;
   line-height: 1.5;
   scroll-behavior: smooth;
-  scroll-padding-top: 84px;
+}
+
+#presentation,
+#skills,
+#feedback,
+#resources,
+#calc-section {
+  scroll-margin-top: 84px;
 }
 
 body {
