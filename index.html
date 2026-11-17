@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо веброзробника</title>
+    <meta
+      name="description"
+      content="Персональне кваліфікаційне портфоліо веброзробника: готові проєкти, презентація Canva, технологічний стек та зворотний зв’язок."
+    />
+    <meta property="og:title" content="Портфоліо веброзробника" />
+    <meta
+      property="og:description"
+      content="Персональне кваліфікаційне портфоліо веброзробника: готові проєкти, презентація Canva, технологічний стек та зворотний зв’язок."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#hero" class="brand-lockup">Портфоліо</a>
+
+        <nav class="header-nav" aria-label="Головна навігація">
+          <a href="#presentation" class="nav-link">Презентація</a>
+          <a href="#skills" class="nav-link">Технології</a>
+          <a href="#showcase" class="nav-link">Проєкти</a>
+          <a href="#feedback" class="nav-link">Контакти</a>
+          <a href="#resources" class="nav-link">Джерела</a>
+
+          <button type="button" class="icon-btn" id="theme-toggle" aria-label="Змінити тему">☾</button>
+          <button type="button" class="icon-btn" id="roadmap-trigger" aria-label="Пошук по сайту">
+            ⌕
+            <span class="bag-count" id="roadmap-count">4</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- СЕКЦІЯ 1: Головна + Перемикач 4 готових проєктів -->
+      <section id="hero" class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="hero-role">Оператор з обробки інформації та програмного забезпечення</p>
+            <h1 class="hero-title">Персональне портфоліо веб-розробника</h1>
+            <p class="hero-sub">
+              Вітаю на моєму кваліфікаційному ресурсі! Тут зібрані мої готові вебпроєкти та практичні інструменти:
+              інтерактивна карта, Telegram-бот, онлайн-калькулятор послуг і форма зворотного зв’язку.
+            </p>
+            <div class="hero-actions">
+              <a href="#showcase" class="btn btn-primary">Переглянути проєкти</a>
+              <a href="#feedback" class="btn btn-ghost">Зв’язатися →</a>
+            </div>
+          </div>
+
+          <div class="hero-stage" id="hero-stage">
+            <div class="hero-project-tilt" id="hero-project-tilt">
+              <a href="project_1.html" class="hero-project-card" id="hero-project-link">
+                <img
+                  id="hero-project-img"
+                  class="hero-project-img"
+                  src="/images/project_1.jpg"
+                  alt="Інтерактивна веб-карта Rust"
+                />
+                <div class="hero-project-overlay">
+                  <div>
+                    <span class="hero-project-kicker" id="hero-project-kicker">Проєкт 01 · HTML, CSS, JavaScript, REST API</span>
+                    <h2 class="hero-project-name" id="hero-project-name">Інтерактивна веб-карта Rust</h2>
+                  </div>
+                  <span class="hero-project-open">Відкрити проєкт ↗</span>
+                </div>
+              </a>
+            </div>
+            <div class="flask-shadow" aria-hidden="true"></div>
+
+            <div class="hero-swatches" id="hero-project-swatches" role="radiogroup" aria-label="Вибрати проєкт">
+              <button type="button" class="swatch-btn is-active" data-project="project_1">
+                <span class="swatch-dot" style="background: #48634B;"></span>
+                <span>01. Карта Rust</span>
+              </button>
+              <button type="button" class="swatch-btn" data-project="project_2">
+                <span class="swatch-dot" style="background: #2B4C65;"></span>
+                <span>02. Telegram-бот</span>
+              </button>
+              <button type="button" class="swatch-btn" data-project="project_3">
+                <span class="swatch-dot" style="background: #6E5A3E;"></span>
+                <span>03. Калькулятор</span>
+              </button>
+              <button type="button" class="swatch-btn" data-project="project_4">
+                <span class="swatch-dot" style="background: #222624;"></span>
+                <span>04. Вебпортфоліо</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <a href="#showcase" class="hero-scroll-btn" aria-label="Перейти до зображень проєктів">↓</a>
+      </section>
+
+      <!-- СЕКЦІЯ 2: Закріплений огляд 4 проєктів при скролі -->
+      <section id="showcase" class="showcase-track">
+        <div class="showcase-viewport">
+          <div class="showcase-frames">
+            <figure class="showcase-frame is-first">
+              <img src="/images/project_1.jpg" alt="Інтерактивна веб-карта Rust" class="showcase-img" />
+            </figure>
+            <figure class="showcase-frame">
+              <img src="/images/project_2.jpg" alt="Telegram-бот зворотного зв’язку" class="showcase-img" />
+            </figure>
+            <figure class="showcase-frame">
+              <img src="/images/project_3.jpg" alt="Калькулятор вартості вебпослуг" class="showcase-img" />
+            </figure>
+            <figure class="showcase-frame">
+              <img src="/images/project_4.jpg" alt="Персональне вебпортфоліо" class="showcase-img" />
+            </figure>
+          </div>
+
+          <div class="showcase-hud">
+            <div>
+              <p class="caption-kicker" id="caption-kicker">Проєкт 01 / 04</p>
+              <h2 class="caption-title" id="caption-title">Інтерактивна веб-карта Rust</h2>
+              <p class="caption-sub" id="caption-sub">Інтерактивні шари локацій, пошук об’єктів та інтеграція з REST API</p>
+              <a href="project_1.html" id="caption-link" class="btn btn-primary btn-sm">Детальніше про проєкт →</a>
+            </div>
+
+            <div class="showcase-dots">
+              <button type="button" class="stage-dot is-active" aria-label="Проєкт 1"></button>
+              <button type="button" class="stage-dot" aria-label="Проєкт 2"></button>
+              <button type="button" class="stage-dot" aria-label="Проєкт 3"></button>
+              <button type="button" class="stage-dot" aria-label="Проєкт 4"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- СЕКЦІЯ 3: Презентація Canva (вставте своє посилання у src="...") -->
+      <section id="presentation" class="presentation-section">
+        <div class="container">
+          <div class="canva-header-row">
+            <h2 class="section-title">Презентація Canva.</h2>
+          </div>
+
+          <div class="canva-embed-card">
+            <!-- Вставте сюди посилання на вашу презентацію з Canva: Поділитися -> Більше -> Вбудувати -> скопіюйте URL з атрибута src="..." -->
+            <iframe
+              id="canva-iframe"
+              class="canva-iframe"
+              loading="lazy"
+              src=""
+              allowfullscreen
+              allow="fullscreen"
+              title="Презентація Canva"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- СЕКЦІЯ 4: Технологічний стек -->
+      <section id="skills" class="bento-section">
+        <div class="container">
+          <div class="section-header-stack">
+            <h2 class="section-title">Технологічний стек.</h2>
+            <p class="section-sub">Інструменти, які використовуються у реалізованих проєктах портфоліо.</p>
+          </div>
+
+          <div class="bento-grid-skills">
+            <article class="bento-tile skill-tile-wide">
+              <div class="skill-tile-top">
+                <span class="skill-num">01</span>
+                <span>Верстка та макети</span>
+              </div>
+              <div>
+                <h3 class="bento-title">HTML5 і CSS3</h3>
+                <p class="bento-sub">Семантична розмітка, адаптивні сітки CSS Grid / Flexbox, світла та темна теми.</p>
+              </div>
+            </article>
+
+            <article class="bento-tile skill-tile-square">
+              <div class="skill-tile-top">
+                <span class="skill-num">02</span>
+                <span>Інтерактивність</span>
+              </div>
+              <div>
+                <h3 class="bento-title">JavaScript</h3>
+                <p class="bento-sub">Динамічний калькулятор, обробка форм, DOM-події та робота з localStorage.</p>
+              </div>
+            </article>
+
+            <article class="bento-tile skill-tile-square">
+              <div class="skill-tile-top">
+                <span class="skill-num">03</span>
+                <span>Сервер і БД</span>
+              </div>
+              <div>
+                <h3 class="bento-title">PHP і MySQL</h3>
+                <p class="bento-sub">Серверна обробка звернень, зберігання заявок та робота з реляційними таблицями.</p>
+              </div>
+            </article>
+
+            <article class="bento-tile">
+              <div class="skill-tile-top">
+                <span class="skill-num">04</span>
+                <span>Інтеграція</span>
+              </div>
+              <div>
+                <h3 class="bento-title">REST API, RAG та Git</h3>
+                <p class="bento-sub">Підключення зовнішніх сервісів, Telegram Bot API, AI/RAG-рішень і контроль версій.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- СЕКЦІЯ 5: Зворотний зв’язок через Gmail акаунт відвідувача -->
+      <section id="feedback" class="feedback-section">
+        <div class="container feedback-grid">
+          <div>
+            <h2 class="section-title">Зворотний зв’язок.</h2>
+            <p class="section-sub">
+              Напишіть повідомлення — лист відкриється у вашому поточному Google-акаунті Gmail для швидкої відправки.
+            </p>
+
+            <div class="feedback-info-list">
+              <div class="feedback-info-item">
+                <span>Пошта отримувача</span>
+                <strong>aleksanderkey3@gmail.com</strong>
+              </div>
+              <div class="feedback-info-item">
+                <span>Telegram</span>
+                <a href="https://t.me/wqxccc" target="_blank" rel="noopener noreferrer">@wqxccc ↗</a>
+              </div>
+              <div class="feedback-info-item">
+                <span>GitHub</span>
+                <a href="https://github.com/default5728" target="_blank" rel="noopener noreferrer">default5728 ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback-form-card" id="feedback-form-card">
+            <form id="feedback-form">
+              <div class="form-field">
+                <label for="feedback-name">Ваше ім’я</label>
+                <input type="text" id="feedback-name" class="form-control" placeholder="Олександр" required />
+              </div>
+
+              <div class="form-field">
+                <label for="feedback-message">Текст повідомлення</label>
+                <textarea
+                  id="feedback-message"
+                  class="form-control"
+                  placeholder="Напишіть ваше повідомлення або запитання..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="feedback-actions">
+                <button type="submit" class="btn btn-primary">Надіслати через пошту →</button>
+                <button type="button" class="btn btn-ghost" id="feedback-copy-btn">Скопіювати текст</button>
+              </div>
+
+              <div class="feedback-status" id="feedback-status" hidden>
+                <p>Відкрито вікно відправки Gmail з вашого активного Google-акаунта на <strong>aleksanderkey3@gmail.com</strong>.</p>
+                <div class="feedback-alt-links">
+                  <a id="feedback-mailto-link" href="mailto:aleksanderkey3@gmail.com" class="btn btn-ghost btn-sm">
+                    Або відкрити системну пошту (mailto) ↗
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- СЕКЦІЯ 7: Довідкові джерела -->
+      <section id="resources" class="resources-section">
+        <div class="container">
+          <div class="section-header-stack">
+            <h2 class="section-title">Довідкові джерела.</h2>
+            <p class="section-sub">Офіційна документація, на яку спирається розробка проєктів.</p>
+          </div>
+
+          <ul class="resources-grid">
+            <li><a href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="resource-meta"><span class="resource-num">01</span><span>· Бекенд</span></div><div class="resource-title-row"><span>Python — офіційний посібник</span><span>↗</span></div></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="resource-meta"><span class="resource-num">02</span><span>· Основи вебу</span></div><div class="resource-title-row"><span>MDN — навчання веброзробці</span><span>↗</span></div></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="resource-meta"><span class="resource-num">03</span><span>· JavaScript API</span></div><div class="resource-title-row"><span>MDN — Fetch API</span><span>↗</span></div></a></li>
+            <li><a href="https://www.php.net/manual/en/" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="resource-meta"><span class="resource-num">04</span><span>· Сервер</span></div><div class="resource-title-row"><span>PHP — офіційний довідник</span><span>↗</span></div></a></li>
+            <li><a href="https://dev.mysql.com/doc/" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="resource-meta"><span class="resource-num">05</span><span>· Бази даних</span></div><div class="resource-title-row"><span>MySQL — документація</span><span>↗</span></div></a></li>
+            <li><a href="https://core.telegram.org/bots/api" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="resource-meta"><span class="resource-num">06</span><span>· Чат-боти</span></div><div class="resource-title-row"><span>Telegram Bot API — документація</span><span>↗</span></div></a></li>
+            <li><a href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="resource-meta"><span class="resource-num">07</span><span>· Контроль версій</span></div><div class="resource-title-row"><span>Git — документація</span><span>↗</span></div></a></li>
+            <li><a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="resource-meta"><span class="resource-num">08</span><span>· Розмітка</span></div><div class="resource-title-row"><span>WHATWG — стандарт HTML</span><span>↗</span></div></a></li>
+            <li><a href="https://www.w3.org/TR/CSS/" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="resource-meta"><span class="resource-num">09</span><span>· Стилізація</span></div><div class="resource-title-row"><span>W3C — специфікації CSS</span><span>↗</span></div></a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="footer-brand">Портфоліо веброзробника</span>
+        <span>Оператор з обробки інформації та програмного забезпечення</span>
+        <div class="footer-links">
+          <a href="https://t.me/wqxccc" target="_blank" rel="noopener noreferrer">Telegram</a>
+          <span>·</span>
+          <a href="https://github.com/default5728" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Висувна панель пошуку -->
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="bag-drawer" id="bag-drawer" hidden>
+      <div class="drawer-header">
+        <h2>Пошук і проєкти</h2>
+        <button type="button" class="icon-btn" id="drawer-close" aria-label="Закрити">✕</button>
+      </div>
+      <div class="drawer-body">
+        <input id="site-search-input" type="search" placeholder="Пошук проєктів, технологій, послуг..." class="drawer-search-input" />
+        <div class="drawer-search-results" id="drawer-search-results" hidden></div>
+        <div id="drawer-roadmap">
+          <div class="drawer-section-head">
+            <span>Готові проєкти</span>
+            <span>4 проєкти</span>
+          </div>
+          <div class="drawer-project-list" id="drawer-project-list"></div>
+        </div>
+      </div>
+      <div class="drawer-footer">
+        <div class="drawer-social-row">
+          <a href="https://t.me/wqxccc" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">Telegram ↗</a>
+          <a href="https://github.com/default5728" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub ↗</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Модальне вікно перегляду -->
+    <dialog class="lightbox-dialog" id="lightbox-dialog">
+      <div class="lightbox-card">
+        <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Закрити">✕</button>
+        <div id="lightbox-body"></div>
+      </div>
+    </dialog>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>

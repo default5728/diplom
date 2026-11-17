@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram-бот зворотного зв’язку — портфоліо</title>
+    <meta name="description" content="Готовий проєкт: Telegram-бот зворотного зв’язку." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body data-project-id="project_2">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-lockup">Портфоліо</a>
+        <nav class="header-nav" aria-label="Головна навігація">
+          <a href="index.html#presentation" class="nav-link">Презентація</a>
+          <a href="index.html#skills" class="nav-link">Технології</a>
+          <a href="index.html#showcase" class="nav-link">Проєкти</a>
+          <a href="index.html#feedback" class="nav-link">Контакти</a>
+          <a href="index.html#resources" class="nav-link">Джерела</a>
+          <button type="button" class="icon-btn" id="theme-toggle" aria-label="Змінити тему">☾</button>
+          <button type="button" class="icon-btn" id="roadmap-trigger" aria-label="Пошук">
+            ⌕<span class="bag-count" id="roadmap-count">4</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-detail-page">
+      <div class="container">
+        <div class="project-detail-topbar">
+          <a href="index.html#showcase" class="btn btn-ghost btn-sm">← До списку проєктів</a>
+          <div class="project-detail-switcher">
+            <a href="project_1.html" class="swatch-btn"><span class="swatch-dot" style="background: #48634B;"></span><span>Карта Rust</span></a>
+            <a href="project_2.html" class="swatch-btn is-active"><span class="swatch-dot" style="background: #2B4C65;"></span><span>Telegram-бот</span></a>
+            <a href="project_3.html" class="swatch-btn"><span class="swatch-dot" style="background: #6E5A3E;"></span><span>Калькулятор</span></a>
+            <a href="project_4.html" class="swatch-btn"><span class="swatch-dot" style="background: #222624;"></span><span>Вебпортфоліо</span></a>
+          </div>
+        </div>
+
+        <p class="detail-kicker">Готовий проєкт 02</p>
+        <h1 class="detail-title">Telegram-бот зворотного зв’язку</h1>
+        <div class="detail-meta-line">
+          <span>Стек: Python або JavaScript, Telegram Bot API</span>
+          <span>·</span>
+          <span>Статус: готовий проєкт · Telegram Bot API</span>
+        </div>
+
+        <figure class="project-detail-cover" id="project-detail-cover">
+          <img src="/images/project_2.jpg" alt="Telegram-бот зворотного зв’язку" />
+          <span class="cover-zoom-hint">Натисніть, щоб збільшити</span>
+        </figure>
+
+        <div class="project-detail-grid">
+          <div>
+            <section class="detail-block">
+              <h2 class="detail-heading">Опис проєкту</h2>
+              <p class="detail-prose">Чат-бот у Telegram, який приймає звернення від користувачів, відповідає на типові запитання через інтерактивні кнопки та миттєво пересилає заявки адміністратору.</p>
+            </section>
+            <section class="detail-block">
+              <h2 class="detail-heading">Використаний стек</h2>
+              <p class="detail-prose">Python або JavaScript, Telegram Bot API</p>
+            </section>
+            <section class="detail-block">
+              <h2 class="detail-heading">Основний функціонал</h2>
+              <ul class="feature-list" id="detail-feature-list"></ul>
+            </section>
+          </div>
+
+          <aside class="detail-summary-card">
+            <h3>Параметри проєкту</h3>
+            <div class="spec-list">
+              <div class="spec-row"><span class="spec-key">Індекс</span><span class="spec-val">Проєкт 02</span></div>
+              <div class="spec-row"><span class="spec-key">Стан</span><span class="spec-val">Готовий</span></div>
+              <div class="spec-row"><span class="spec-key">Стек</span><span class="spec-val">Telegram Bot API</span></div>
+            </div>
+            <a href="https://t.me/diplom_lviv_bot" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full">Перейти до Telegram ↗</a>
+            <div class="detail-pager">
+              <a href="project_1.html" class="btn btn-ghost btn-sm">← Карта Rust</a>
+              <a href="project_3.html" class="btn btn-ghost btn-sm">Калькулятор →</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="footer-brand">Портфоліо веброзробника</span>
+        <span>Оператор з обробки інформації та програмного забезпечення</span>
+        <div class="footer-links">
+          <a href="https://t.me/wqxccc" target="_blank" rel="noopener noreferrer">Telegram</a>
+          <span>·</span>
+          <a href="https://github.com/default5728" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="bag-drawer" id="bag-drawer" hidden>
+      <div class="drawer-header"><h2>Пошук і проєкти</h2><button type="button" class="icon-btn" id="drawer-close">✕</button></div>
+      <div class="drawer-body">
+        <input id="site-search-input" type="search" placeholder="Пошук проєктів, технологій, послуг..." class="drawer-search-input" />
+        <div class="drawer-search-results" id="drawer-search-results" hidden></div>
+        <div id="drawer-roadmap">
+          <div class="drawer-section-head"><span>Готові проєкти</span><span>4 проєкти</span></div>
+          <div class="drawer-project-list" id="drawer-project-list"></div>
+        </div>
+      </div>
+      <div class="drawer-footer">
+        <div class="drawer-social-row">
+          <a href="https://t.me/wqxccc" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">Telegram ↗</a>
+          <a href="https://github.com/default5728" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub ↗</a>
+        </div>
+      </div>
+    </aside>
+
+    <dialog class="lightbox-dialog" id="lightbox-dialog">
+      <div class="lightbox-card">
+        <button type="button" class="lightbox-close" id="lightbox-close">✕</button>
+        <div id="lightbox-body"></div>
+      </div>
+    </dialog>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
